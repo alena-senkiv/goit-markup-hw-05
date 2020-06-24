@@ -534,6 +534,8 @@ button {
 .projects-list-item {
   width: 370px;
   margin: 15px;
+
+  transition: box-shadow var(--duration) var(--timing);
 }
 
 .projects-list-item:hover,
