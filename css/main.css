@@ -132,6 +132,7 @@ button {
   color: var(--accent-color);
 }
 
+.nav-link::after,
 .current::after {
   position: absolute;
   bottom: 0;
@@ -140,6 +141,16 @@ button {
   height: 4px;
   width: 100%;
   border-radius: 2px;
+}
+
+.nav-link::after {
+  transform: scaleX(0);
+  transition: transform var(--duration) var(--timing);
+}
+
+.current::after,
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .adress-link .icon {
@@ -588,7 +599,7 @@ button {
   padding: 6px 22px;
   margin-left: 0;
 
-  transition: background-color var(--duration) var(--timing), color var(--duration) var(--timing);
+  transition: background-color var(--duration) var(--timing), color var(--duration) var(--timing), box-shadow var(--duration) var(--timing);
 }
 
 .sort-button:checked + label,
