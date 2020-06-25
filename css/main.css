@@ -410,14 +410,13 @@ button {
   border: 1px solid;
   border-radius: 4px;
   color: var(--icon-color);
-  transition: border var(--duration) var(--timing), color var(--duration) var(--timing);
+  transition: color var(--duration) var(--timing);
 }
 
 .link-clients:hover,
 .link-clients:focus {
   border: 1px solid;
   color: var(--accent-color);
-  outline: none;
 }
 
 .clients-icon {
