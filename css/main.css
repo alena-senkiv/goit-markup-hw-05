@@ -345,10 +345,8 @@ button {
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  margin: 0;
+  padding: 27px 0;
   background-color: var(--bg-opacity-color);
   color: var(--primary-white-color);
   text-align: center;
