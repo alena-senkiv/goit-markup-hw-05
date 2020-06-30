@@ -70,13 +70,13 @@ button {
 
 /* HEADER */
 
-header {
+.header {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
-  background-color: white;
+  z-index: 10;
+  background-color: inherit;
 }
 
 .border {
