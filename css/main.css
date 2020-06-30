@@ -10,8 +10,7 @@ html {
   --secondary-bg-color: #f5f4fa;
   --icon-color: #afb1b8;
   --bg-opacity-color: rgba(47, 48, 58, 0.8);
-  --duration: 250ms;
-  --timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -117,7 +116,7 @@ button {
   letter-spacing: 0.02em;
   font-weight: 500;
 
-  transition: color var(--duration) var(--timing);
+  transition: color var(--timing);
 }
 
 .nav-link {
@@ -154,7 +153,7 @@ button {
 
 .nav-link::after {
   transform: scaleX(0);
-  transition: transform var(--duration) var(--timing);
+  transition: transform var(--timing);
 }
 
 .current::after,
@@ -235,7 +234,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
   line-height: 2;
 
-  transition: color var(--duration) var(--timing);
+  transition: color var(--timing);
 }
 
 .input-email {
@@ -417,7 +416,7 @@ button {
   border: 1px solid;
   border-radius: 4px;
   color: var(--icon-color);
-  transition: color var(--duration) var(--timing);
+  transition: color var(--timing);
 }
 
 .link-clients:hover,
@@ -446,7 +445,7 @@ button {
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  transition: background-color var(--duration) var(--timing);
+  transition: background-color var(--timing);
 }
 
 .main-button:hover,
@@ -482,7 +481,7 @@ button {
   width: 44px;
   height: 44px;
 
-  transition: background-color var(--duration) var(--timing), color var(--duration) var(--timing);
+  transition: background-color var(--timing), color var(--timing);
 }
 
 .team .social-icon {
@@ -545,28 +544,30 @@ button {
   line-height: 1.6;
 
   transform: translateY(100%);
-  transition: transform var(--duration) var(--timing);
+  transition: transform var(--timing);
 }
 
 .projects-list-item {
   width: 370px;
   margin: 15px;
-
-  transition: box-shadow var(--duration) var(--timing);
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects-link {
+  display: block;
+  transition: box-shadow var(--timing);
+}
+
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.projects-list-item:hover .projects-item-description,
-.projects-list-item:focus .projects-item-description {
+.projects-link:hover .projects-item-description,
+.projects-link:focus .projects-item-description {
   transform: translateY(0);
 }
 
-.projects-list-item img,
-.projects-list-item a {
+.projects-list-item img {
   display: block;
 }
 
@@ -605,7 +606,7 @@ button {
   padding: 6px 22px;
   margin-left: 0;
 
-  transition: background-color var(--duration) var(--timing), color var(--duration) var(--timing), box-shadow var(--duration) var(--timing);
+  transition: background-color var(--timing), color var(--timing), box-shadow var(--timing);
 }
 
 .sort-button:checked + label,
