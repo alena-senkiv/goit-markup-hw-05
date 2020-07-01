@@ -423,6 +423,7 @@ button {
 .link-clients:focus {
   border: 1px solid;
   color: var(--accent-color);
+  outline: none;
 }
 
 .clients-icon {
@@ -497,6 +498,7 @@ button {
 .social-icon:hover,
 .social-icon:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 
 .social-icon .icon {
@@ -557,13 +559,14 @@ button {
   transition: box-shadow var(--timing);
 }
 
-.projects-link:hover,
-.projects-link:focus {
+.projects-link:focus,
+.projects-link:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 
-.projects-link:hover .projects-item-description,
-.projects-link:focus .projects-item-description {
+.projects-link:focus .projects-item-description,
+.projects-link:hover .projects-item-description {
   transform: translateY(0);
 }
 
